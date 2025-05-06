@@ -45,7 +45,7 @@ async function main() {
 }
 
 
-app.set("views engine","ejs");
+app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 app.use(express.urlencoded({extended: true}));
 app.use(methodOverride("_method"));
@@ -109,7 +109,9 @@ res.locals.currUser=req.user;
 
 // })
 
-
+app.get("/",(req,res)=>{
+  res.redirect('/listings')
+})
 
 
 app.use("/listings", listingRouter);
@@ -132,6 +134,7 @@ res.status(statusCode).render("error.ejs",{message});
   // res.status(statusCode).send(message);
 })
 
-app.listen(8080,() =>{
-  console.log("server is listening to port 8080");
-})
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
