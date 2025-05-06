@@ -1,0 +1,140 @@
+/* body{
+  background-color: lavender;
+} */
+ body{
+  font-family: "Plus Jakarta Sans",sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ }
+
+ .container{
+  flex:1;
+ }
+/* navbar */
+.navbar{
+  height:5rem;
+  background-color: white;
+}
+.fa-compass{
+  color:red;
+  font-size: 2rem;
+}
+.nav-link{
+  color: #222 !important;
+}
+
+/* Footer */
+.f-info-links a{
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover{
+  text-decoration: underline;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand{
+  width: 100%;
+    vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-socials i{
+  font-size:1.5rem;
+
+  margin-right:1rem ;
+}
+.f-info{
+  align-items: center;
+  height: 8rem;
+  background-color: #ebeaeb;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:space-evenly ;
+}
+
+/* Cards */
+/* .listing-card{
+  border:none !important;
+  margin-bottom: 2rem;
+} */
+.listing-card {
+  border: none !important;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 0 4px;
+  box-sizing: border;
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 1rem;
+  /* padding-left: 4px;   */
+  /* padding-right: 4px;  */
+  box-sizing: border-box;
+}
+
+/* .card-img-overlay:hover{
+  transform: scale(1.2);
+
+} */
+.listing-card:hover .card-img-top {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-body{
+  color: red;
+  padding: 0 !important;
+}
+
+.new{
+  color: red;
+}
+.card-text p{
+  font-weight: 400;
+}
+.listing-link{
+  text-decoration: none;
+}
+.card-img-overlay{
+  opacity: 0;
+
+}
+
+.card-img-overlay:hover{
+  opacity: 0.2;
+  background-color: white;
+  transform: scale(1.2);
+
+}
+/* NEW PAGE */
+.add-btn{
+ background-color: #fe424d  !important;
+ border: none;
+}
+/* Edir page */
+.edit-btn{
+  background-color: #fe424d  !important;
+  border: none;
+}
+/* Show img */
+.show-img{
+  height: 30vh;
+}
+.btns{
+  display: flex;
+}
+
+.show-card{
+  padding-left: 0;
+  padding-right: 0;
+}
